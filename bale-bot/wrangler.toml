@@ -1,0 +1,40 @@
+name               = "bale-main-bot"
+main               = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# ── KV Namespaces ─────────────────────────────────────────────────────────────
+[[kv_namespaces]]
+binding    = "KV"
+id         = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_ID"
+
+# ── R2 Bucket (optional – for temporary file storage) ─────────────────────────
+# [[r2_buckets]]
+# binding    = "R2"
+# bucket_name = "bale-bot-temp-files"
+
+# ── Environment variables (non-secret) ────────────────────────────────────────
+[vars]
+ENVIRONMENT  = "production"
+GEMINI_MODEL = "gemini-2.0-flash"
+
+# Downloader providers: set to "http" to activate, leave empty to disable
+YOUTUBE_PROVIDER   = ""
+INSTAGRAM_PROVIDER = ""
+
+# ── Secrets (set via: wrangler secret put SECRET_NAME) ───────────────────────
+# BALE_BOT_TOKEN
+# GEMINI_API_KEY
+# WEBHOOK_SECRET
+# DOWNLOADER_API_URL
+# DOWNLOADER_API_KEY
+
+# ── Worker limits ─────────────────────────────────────────────────────────────
+[limits]
+cpu_ms = 50
+
+# ── Routes ────────────────────────────────────────────────────────────────────
+# [[routes]]
+# pattern   = "bale.yourdomain.com/*"
+# zone_name = "yourdomain.com"

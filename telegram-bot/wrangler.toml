@@ -1,0 +1,29 @@
+name            = "telegram-file-gateway"
+main            = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# ── KV Namespaces ─────────────────────────────────────────────────────────────
+[[kv_namespaces]]
+binding  = "KV"
+id       = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_ID"
+
+# ── Environment variables (non-secret) ────────────────────────────────────────
+[vars]
+ENVIRONMENT = "production"
+
+# ── Secrets (set via: wrangler secret put SECRET_NAME) ───────────────────────
+# TELEGRAM_BOT_TOKEN
+# BALE_BOT_TOKEN
+# BALE_TARGET_CHAT_ID
+# WEBHOOK_SECRET
+
+# ── Worker limits ─────────────────────────────────────────────────────────────
+[limits]
+cpu_ms = 50
+
+# ── Routes ────────────────────────────────────────────────────────────────────
+# [[routes]]
+# pattern = "tg.yourdomain.com/*"
+# zone_name = "yourdomain.com"
