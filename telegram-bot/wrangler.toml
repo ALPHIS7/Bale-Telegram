@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # ── KV Namespaces ─────────────────────────────────────────────────────────────
 [[kv_namespaces]]
 binding  = "KV"
-id       = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id       = "1cb7e93d3509479fb4aadfdcdeff1a6e"
 preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_ID"
 
 # ── Environment variables (non-secret) ────────────────────────────────────────
