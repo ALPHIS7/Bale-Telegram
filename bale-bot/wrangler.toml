@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # ── KV Namespaces ─────────────────────────────────────────────────────────────
 [[kv_namespaces]]
 binding    = "KV"
-id         = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id         = "6b04617b8e894345926af2f4ee6d0f4a"
 preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_ID"
 
 # ── R2 Bucket (optional – for temporary file storage) ─────────────────────────
