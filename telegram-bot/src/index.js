@@ -9,8 +9,7 @@ const app = new Hono();
 app.get('/', (c) => c.json({ status: 'ok', service: 'telegram-file-gateway' }));
 
 // ── Webhook endpoint ──────────────────────────────────────────────────────────
-app.post('/webhook/:token', verifyTelegramToken, webhookHandler);
-
+app.post('/webhook', verifyTelegramToken, webhookHandler);
 // ── 404 fallback ──────────────────────────────────────────────────────────────
 app.notFound((c) => c.json({ error: 'not_found' }, 404));
 
