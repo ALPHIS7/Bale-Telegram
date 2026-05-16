@@ -29,11 +29,6 @@ INSTAGRAM_PROVIDER = ""
 # WEBHOOK_SECRET
 # DOWNLOADER_API_URL
 # DOWNLOADER_API_KEY
-
-# ── Worker limits ─────────────────────────────────────────────────────────────
-[limits]
-cpu_ms = 50
-
 # ── Routes ────────────────────────────────────────────────────────────────────
 # [[routes]]
 # pattern   = "bale.yourdomain.com/*"
