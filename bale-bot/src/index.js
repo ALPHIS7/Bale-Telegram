@@ -9,7 +9,7 @@ const app = new Hono();
 app.get('/', (c) => c.json({ status: 'ok', service: 'bale-main-bot' }));
 
 // ── Bale webhook ──────────────────────────────────────────────────────────────
-app.post('/webhook/:token', verifyBaleToken, webhookHandler);
+app.post('/webhook/:token', webhookHandler);
 
 // ── 404 / error ───────────────────────────────────────────────────────────────
 app.notFound((c) => c.json({ error: 'not_found' }, 404));
