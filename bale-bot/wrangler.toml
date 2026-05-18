@@ -33,3 +33,9 @@ INSTAGRAM_PROVIDER = ""
 # [[routes]]
 # pattern   = "bale.yourdomain.com/*"
 # zone_name = "yourdomain.com"
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
