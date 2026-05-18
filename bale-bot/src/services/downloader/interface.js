@@ -15,13 +15,14 @@
  *   { type: 'media_group', items: [{ url, type }] }
  */
 
-import { HttpProvider } from './providers/http.js';
-import { logger }       from '../../utils/logger.js';
+import { HttpProvider }   from './providers/http.js';
+import { CobaltProvider } from './providers/cobalt.js';
+import { logger }         from '../../utils/logger.js';
 
 // Registry maps provider name → constructor
 const PROVIDER_REGISTRY = {
-  http: HttpProvider,
-  // stub: StubProvider,   ← add future providers here
+  http:   HttpProvider,
+  cobalt: CobaltProvider,
 };
 
 /**
