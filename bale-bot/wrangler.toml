@@ -20,8 +20,8 @@ ENVIRONMENT  = "production"
 GEMINI_MODEL = "gemini-2.0-flash"
 
 # Downloader providers: set to "http" to activate, leave empty to disable
-YOUTUBE_PROVIDER   = ""
-INSTAGRAM_PROVIDER = ""
+YOUTUBE_PROVIDER   = "cobalt"
+INSTAGRAM_PROVIDER = "cobalt"
 
 # ── Secrets (set via: wrangler secret put SECRET_NAME) ───────────────────────
 # BALE_BOT_TOKEN
